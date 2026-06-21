@@ -1,6 +1,6 @@
 # CNN FPGA Accelerator
 
-A small C++/HLS CNN inference pipeline built to demonstrate how convolutional neural networks map to FPGA-style hardware: fixed-point arithmetic, tiled on-chip buffers, pipelined MAC arrays, and dataflow between stages.
+A C++/HLS CNN inference pipeline built to demonstrate how convolutional neural networks map to FPGA-style hardware: fixed-point arithmetic, tiled on-chip buffers, pipelined MAC arrays, and dataflow between stages.
 
 This is **not** a general ML framework. It is an educational accelerator codebase that runs on CPU for verification and synthesizes to RTL with AMD Vitis HLS.
 
@@ -223,19 +223,4 @@ Reports:
 
 Target device: **xczu3eg-sbva484-1-e** (Zynq UltraScale+), 100 MHz default clock.
 
----
 
-## Future work
-
-- [ ] AXI4 master/slave interfaces for DRAM access
-- [ ] Line buffers for streaming conv (one row at a time)
-- [ ] Systolic array conv engine
-- [ ] Cosimulation (C/RTL) with Vitis HLS
-- [ ] Larger input sizes with multi-tile scheduling
-- [ ] Resource/latency tradeoff sweep over `TILE_W`, `UNROLL_FACTOR`
-
----
-
-## License
-
-Educational / portfolio project. Add a license file if you publish publicly.
