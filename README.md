@@ -41,21 +41,6 @@ The code is written so each function corresponds to a **hardware block** you cou
 ## Architecture
 
 ![Architecture](./architecture.svg)
-```
-[DRAM] --DMA--> [Input BRAM / tile buffer]
-                      |
-                      v
-               [Weight BRAM] --> [MAC array + accumulator]
-                      |
-                      v
-                  [ReLU unit]
-                      |
-                      v
-               [Max-pool comparators]
-                      |
-                      v
-              [Output BRAM] --> [DRAM]
-```
 
 ### Hardware blocks
 
