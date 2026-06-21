@@ -40,6 +40,7 @@ The code is written so each function corresponds to a **hardware block** you cou
 
 ## Architecture
 
+![Architecture](./architecture.svg)
 ```
 [DRAM] --DMA--> [Input BRAM / tile buffer]
                       |
