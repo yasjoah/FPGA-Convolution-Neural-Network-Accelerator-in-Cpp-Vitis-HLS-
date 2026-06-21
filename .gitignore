@@ -1,0 +1,36 @@
+# Build
+build/
+cmake-build-*/
+
+# Vitis HLS generated projects
+cnn_hls_project/
+cnn_hls_baseline/
+logs/
+dfx_runtime.txt
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled objects / binaries
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Debug
+*.pdb
+*.ilk
